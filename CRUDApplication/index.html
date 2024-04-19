@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRUD application!</title>
+</head>
+
+<body class="d-flex">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>New User</h3>
+                <form action="#">
+                    <div class="my-3">
+                        <input class="form-control name" type="text" placeholder="Your Name">
+                    </div>
+                    <div class="my-3">
+                        <input class="form-control surname" type="text" placeholder="Your Surname">
+                    </div>
+                    <div class="my-3">
+                        <input class="form-control email" type="email" placeholder="Your Email">
+                    </div>
+                    <div class="my-3">
+                        <input type="submit" class="btn btn-primary mt-3" value="Add user"
+                            onclick="createUser(event)"></input>
+                        <input type="submit" class="btn btn-success mt-3" value="Show All Users"
+                            onclick="showUsers(event)"></input>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-lg-12">
+                <h3>Users</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>
